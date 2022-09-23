@@ -8,11 +8,9 @@
     font-size: 62.5%;
 }
 
-.card-rain {
-    background-color: #02799D;
-}
 
 body {
+    font-family: 'Roboto', sans-serif;
     display: grid;
     align-items: center;
     min-height: 100vh;
@@ -21,29 +19,98 @@ body {
 
 main {
     display: flex;
-    justify-content: center;
+    justify-self: center;
+    align-items: center;
     gap: 19.2rem;
 }
 
-#time{
+#time {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    font-size: clamp(12.61rem, 12.61rem - 10vw, 6.3rem);
+    font-weight: 500;
+    line-height: 14.8rem;
+
     gap: 4.8rem;
 }
 
-#timer{
+#timer {
+    color: #323238;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#controls{
+button {
+    border: none;
+    cursor: pointer;
+}
+
+#controls {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 4rem;
 }
 
-#card-sounds{
+#controls button {
+    background-color: transparent;
+}
+
+#controls button svg {
+    width: clamp(4.8rem, 2rem + 12vw, 4.8rem);
+}
+
+.play svg path,
+.stop svg path,
+.more svg path,
+.less svg path {
+    fill: hsl(240, 6%, 21%);
+
+}
+
+
+#card-sounds {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3.2rem
 }
 
+#card-sounds button {
+    width: clamp(13.8rem, 13.8rem - 10vw, 6.9rem);
+    height: clamp(15.2rem, 15.2rem - 10vh, 7.6rem);
+    border-radius: 2.4rem;
+}
+
+.card-forestoff svg path,
+.card-rainonoff svg path,
+.card-cofeeoff svg path,
+.card-fireplaceoff svg path {
+    fill: hsl(240, 6%, 21%);
+}
+
+.card-foreston svg path,
+.card-rainonon svg path,
+.card-cofeeon svg path,
+.card-fireplaceon svg path {
+    fill: hsl(0, 0%, 100%);
+}
+
+
+.card-forestoff,
+.card-rainonoff,
+.card-cofeeoff,
+.card-fireplaceoff {
+    background-color: hsla(240, 9%, 89%, 1);
+}
+
+.card-foreston,
+.card-rainonon,
+.card-cofeeon,
+.card-fireplaceon {
+    background-color: hsla(194, 97%, 31%, 1);
+}
+
+.hide {
+    display: none;
+}
