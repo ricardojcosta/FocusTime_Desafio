@@ -9,7 +9,7 @@ Projeto construído no curso Explorer da Rocketseat. Trata-se de um cronometro e
 
 
 
-[ 🔗 Clique aqui para acessar]([em construção](https://ricardojcosta.github.io/FocusTime_Desafio/))
+[ 🔗 Clique aqui para acessar](https://ricardojcosta.github.io/FocusTime_Desafio)
 
 
 ## ⚒ Tecnologias
