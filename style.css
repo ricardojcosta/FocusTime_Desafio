@@ -33,11 +33,15 @@ main {
     gap: 2.7rem;
 }
 
-#timer {
+.timer {
     color: #323238;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.timer-dark {
+    color: #FFFFFF;
 }
 
 button {
@@ -67,6 +71,15 @@ button {
     fill: hsl(240, 6%, 21%);
 }
 
+.play-dark svg path,
+.stop-dark svg path,
+.more-dark svg path,
+.less-dark svg path
+{
+    fill: hsl(240, 7%, 78%);
+
+}
+
 #card-sounds {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -86,6 +99,14 @@ button {
     fill: hsl(240, 6%, 21%);
 }
 
+.card-forestoff-d svg path,
+.card-rainonoff-d svg path,
+.card-cofeeoff-d svg path,
+.card-fireplaceoff-d svg path {
+    fill: hsl(240, 7%, 78%);
+
+}
+
 .card-foreston svg path,
 .card-rainonon svg path,
 .card-cofeeon svg path,
@@ -101,11 +122,40 @@ button {
     background-color: hsla(240, 9%, 89%, 1);
 }
 
+.card-forestoff-dark,
+.card-rainonoff-dark,
+.card-cofeeoff-dark,
+.card-fireplaceoff-dark {
+    background-color:hsla(240, 6%, 17%, 1);
+    
+}
+
 .card-foreston,
 .card-rainonon,
 .card-cofeeon,
 .card-fireplaceon {
     background-color: hsla(194, 97%, 31%, 1);
+}
+
+.card-foreston-dark,
+.card-rainonon-dark,
+.card-cofeeon-dark,
+.card-fireplaceon-dark {
+    background-color:hsla(195, 74%, 15%, 1);
+}
+
+.mode-light,
+.mode-dark {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 6.4rem 6.4rem 0 0;
+}
+
+.dark {
+    background-color: hsla(240, 5%, 7%, 1);
+
 }
 
 .hide {
