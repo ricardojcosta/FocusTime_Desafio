@@ -65,9 +65,7 @@ button {
 .more svg path,
 .less svg path {
     fill: hsl(240, 6%, 21%);
-
 }
-
 
 #card-sounds {
     display: grid;
