@@ -33,11 +33,15 @@ main {
     gap: 2.7rem;
 }
 
-#timer {
+.timer {
     color: #323238;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.timer-dark {
+    color: #FFFFFF;
 }
 
 button {
@@ -67,6 +71,14 @@ button {
     fill: hsl(240, 6%, 21%);
 }
 
+.play-dark svg path,
+.stop-dark svg path,
+.more-dark svg path,
+.less-dark svg path {
+    fill: hsl(240, 7%, 78%);
+
+}
+
 #card-sounds {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -86,6 +98,14 @@ button {
     fill: hsl(240, 6%, 21%);
 }
 
+.card-forestoff-d svg path,
+.card-rainonoff-d svg path,
+.card-cofeeoff-d svg path,
+.card-fireplaceoff-d svg path {
+    fill: hsl(240, 7%, 78%);
+
+}
+
 .card-foreston svg path,
 .card-rainonon svg path,
 .card-cofeeon svg path,
@@ -101,12 +121,157 @@ button {
     background-color: hsla(240, 9%, 89%, 1);
 }
 
+.card-forestoff-dark,
+.card-rainonoff-dark,
+.card-cofeeoff-dark,
+.card-fireplaceoff-dark {
+    background-color: hsla(240, 6%, 17%, 1);
+
+}
+
 .card-foreston,
 .card-rainonon,
 .card-cofeeon,
 .card-fireplaceon {
     background-color: hsla(194, 97%, 31%, 1);
 }
+
+.card-foreston-dark,
+.card-rainonon-dark,
+.card-cofeeon-dark,
+.card-fireplaceon-dark {
+    background-color: hsla(195, 74%, 15%, 1);
+}
+
+.mode-light,
+.mode-dark {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 6.4rem 6.4rem 0 0;
+}
+
+.dark {
+    background-color: hsla(240, 5%, 7%, 1);
+
+}
+
+.slider-forest {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10rem;
+    height: .4rem;
+    border-radius: 1.2rem;
+    background-color: #323238;
+    outline: none;
+    border: none;
+    margin-top: 3.2rem;
+}
+
+.slider-forest::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.6rem;
+    height: 1.6rem;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #323238;
+}
+
+
+.slider-rainon {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10rem;
+    height: .4rem;
+    border-radius: 1.2rem;
+    background-color: #323238;
+    outline: none;
+    border: none;
+    margin-top: 3.2rem;
+}
+
+.slider-rainon::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.6rem;
+    height: 1.6rem;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #323238;
+}
+
+
+.slider-cofee {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10rem;
+    height: .4rem;
+    border-radius: 1.2rem;
+    background-color: #323238;
+    outline: none;
+    border: none;
+    margin-top: 3.2rem;
+}
+
+.slider-cofee::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.6rem;
+    height: 1.6rem;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #323238;
+}
+
+
+
+.slider-fireplace {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10rem;
+    height: .4rem;
+    border-radius: 1.2rem;
+    background-color: #323238;
+    outline: none;
+    border: none;
+    margin-top: 3.2rem;
+}
+
+.slider-fireplace::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.6rem;
+    height: 1.6rem;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #323238;
+}
+
+.slider-dark {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10rem;
+    height: .4rem;
+    border-radius: 1.2rem;
+    background-color: white;
+    outline: none;
+    border: none;
+    margin-top: 3.2rem;}
+
+
+
+.slider-dark::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.6rem;
+    height: 1.6rem;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: white;
+}
+
 
 .hide {
     display: none;
