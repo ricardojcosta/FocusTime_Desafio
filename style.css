@@ -258,7 +258,8 @@ button {
     background-color: white;
     outline: none;
     border: none;
-    margin-top: 3.2rem;}
+    margin-top: 3.2rem;
+}
 
 
 
@@ -270,9 +271,84 @@ button {
     cursor: pointer;
     border-radius: 50%;
     background-color: white;
+
 }
 
 
 .hide {
     display: none;
+}
+
+@media (max-width:900px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+        gap: .5rem;
+
+    }
+
+    #time {
+        display: flex;
+        flex-direction: column;
+        font-size: clamp(6.3rem, 6.3rem - 10vw, 6.3rem);
+        font-weight: 500;
+        line-height: 7.8rem;
+        gap: .1rem;
+    }
+
+    #controls {
+        gap: 2rem;
+    }
+
+    #controls button svg {
+        width: clamp(2.4rem, 1rem + 6vw, 2.4rem);
+    }
+
+    #card-sounds button {
+        width: clamp(10rem, 10rem - 10vw, 6rem);
+        height: clamp(10rem, 10rem - 10vh, 6rem);
+        border-radius: 1.2rem;
+    }
+
+    .slider-forest {
+        width: 9rem;
+        border-radius: 1.2rem;
+        margin-top: 1.5rem;
+    }
+
+    .slider-rainon {
+        width: 9rem;
+        border-radius: 1.2rem;
+        margin-top: 1.5rem;
+    }
+
+    .slider-cofee {
+        width: 9rem;
+        border-radius: 1.2rem;
+        margin-top: 1.5rem;
+    }
+
+    .slider-fireplace {
+        width: 9rem;
+        border-radius: 1.2rem;
+        margin-top: 1.5rem;
+    }
+
+    .slider-dark {
+        width: 9rem;
+        border-radius: 1.2rem;
+        margin-top: 1.5rem;
+    }
+
+    .mode-light,
+    .mode-dark {
+        top: 0;
+        right: 0;
+        margin: 3.2rem 3.2rem 0 0;
+    }
+
+
 }
