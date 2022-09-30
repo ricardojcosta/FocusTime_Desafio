@@ -20,6 +20,7 @@ const audioFirePlace = new Audio("./sounds/Lareira.wav")
 /* ----------------------- Buttons controls ------------------------------------- */
 const buttonPlay = document.querySelector('.play')
 const buttonStop = document.querySelector('.stop')
+const buttonPause = document.querySelector('.pause')
 const buttonMore = document.querySelector('.more')
 const buttonLess = document.querySelector('.less')
 const minutesDisplay = document.querySelector('.minutes')
@@ -83,12 +84,25 @@ function countDown() {
 
 
 buttonPlay.addEventListener('click', function () {
+    togglePlayPause()
     countDown()
+})
 
+
+function togglePlayPause() {
+    buttonPlay.classList.toggle('hide')
+    buttonPause.classList.toggle('hide')
+}
+
+buttonPause.addEventListener('click', function () {
+    clearTimeout(timerTimeOut)
+    togglePlayPause()
 })
 
 buttonStop.addEventListener('click', function () {
     resetTimer()
+    buttonPlay.classList.remove('hide')
+    buttonPause.classList.add('hide')
 })
 
 buttonMore.addEventListener('click', function () {
@@ -135,7 +149,7 @@ buttonForestOff.addEventListener('click', function () {
     buttonCofeeOff.classList.remove('hide')
     buttonFirePlaceOff.classList.remove('hide')
     toggleSound(audioForest, audioRainon, audioCofee, audioFirePlace)
-   
+
 })
 
 buttonRainonOff.addEventListener('click', function () {
@@ -177,7 +191,7 @@ buttonFirePlaceOff.addEventListener('click', function () {
 buttonForestOn.addEventListener('click', function () {
     buttonForestOn.classList.add('hide')
     buttonForestOff.classList.remove('hide')
-    audioForest.pause()  
+    audioForest.pause()
 })
 
 buttonForestOn.addEventListener('input', function () {
@@ -222,6 +236,7 @@ buttonModeLight.addEventListener('click', function () {
     main.classList.add('dark')
     colorTimer.classList.add('timer-dark')
     buttonPlay.classList.add('play-dark')
+    buttonPause.classList.add('pause-dark')
     buttonStop.classList.add('stop-dark')
     buttonMore.classList.add('more-dark')
     buttonLess.classList.add('less-dark')
@@ -253,6 +268,7 @@ buttonModeDark.addEventListener('click', function () {
     main.classList.remove('dark')
     colorTimer.classList.remove('timer-dark')
     buttonPlay.classList.remove('play-dark')
+    buttonPause.classList.remove('pause-dark')
     buttonStop.classList.remove('stop-dark')
     buttonMore.classList.remove('more-dark')
     buttonLess.classList.remove('less-dark')

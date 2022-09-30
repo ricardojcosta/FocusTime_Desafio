@@ -65,6 +65,7 @@ button {
 }
 
 .play svg path,
+.pause svg path,
 .stop svg path,
 .more svg path,
 .less svg path {
@@ -72,6 +73,7 @@ button {
 }
 
 .play-dark svg path,
+.pause-dark svg path,
 .stop-dark svg path,
 .more-dark svg path,
 .less-dark svg path {
